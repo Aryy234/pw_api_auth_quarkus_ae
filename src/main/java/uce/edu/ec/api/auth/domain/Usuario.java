@@ -1,4 +1,12 @@
+package uce.edu.ec.api.auth.domain;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "usuarios")
@@ -11,7 +19,7 @@ public class Usuario extends PanacheEntityBase {
     @Column(name = "username")
     private String username;
     
-    private String passweord;
+    private String password;
     private String rol;
 
 
